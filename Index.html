@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css"/> 
+</head>
+<body>
+    <!-- Title -->
+   <h1 class="title">Welcome to Katik</h1>
+   <p class="subtitle">
+       Hai sobat selamat datang di Katik :], sebagai web apps sederhana yang berfungsi untuk mengitung nilai luas dan keliling bangun datar    
+   </p>
+   <!-- Header/Navbar -->
+<header>
+    <nav>
+        <div class="menu">
+        <a href="#segitiga" class="menu-triangle"> segitiga</a>
+        <a href="#jajargenjang"> jajargenjang</a>
+    </nav>
+</header>
+<main>
+    <!-- Main Page -->
+    <section id="segitiga">
+        <div class="card">
+            <div>
+            <h2>Luas Segitiga</h2>
+           </div>
+         </div>
+        <img src="Assets/Segitiga.jpg" alt="">
+        <div>
+            <h6>Rumus Luas</h6>
+            <p>L = 1/2 x T x A</p>
+        </div>
+        <div>
+            <p>dimana</p>
+            <p id="nilai-alas">Alas = ....</p>
+            <p id="nilai-tinggi">Tinggi = ....</p>
+            <p id="nilai-luas">Luas = ....</p>
+        </div>
+        <div class="form-hitung">
+            <h1>Hitung Luas Segitiga</h1>
+            <form action="" class="form-triangle">
+                <input type="number" name="alas-triangle" placeholder="alas"/>
+                <input type="number" name="tinggi-triangle" placeholder="tinggi"/>
+                <button type="button" class="button-triangle" onclick="return calculateTriangle()">hitung</button>
+                <!-- <button type="submit" class="button-triangle">Hitung</button> -->
+            </form>
+        </div>
+        </div>
+
+
+        <!--Keliling Segitiga-->
+        <div class="card">
+            <div>
+            <h2>Keliling Segitiga</h2>
+           </div>
+         </div>
+        <img src="Assets/Segitiga.jpg" alt="">
+        <div>
+            <h6>Rumus Keliling</h6>
+            <p>K = Sisi 1 + Sisi 2 + Sisi 3</p>
+        </div>
+        <div>
+            <p>dimana</p>
+            <p id="nilai-sisi-1">Sisi 1 = ....</p>
+            <p id="nilai-sisi-2">Sisi 2 = ....</p>
+            <p id="nilai-sisi-3">Sisi 3 = ....</p>
+            <p id="nilai-keliling">Keliling = ....</p>
+        </div>
+        <div class="form-hitung">
+            <h1>Hitung Keliling Segitiga</h1>
+            <form action="" class="form-triangle">
+                <input type="number" name="sisi1-triangle" placeholder="sisi 1"/>
+                <input type="number" name="sisi2-triangle" placeholder="sisi 2"/>
+                <input type="number" name="sisi3-triangle" placeholder="sisi 3"/>
+                <button type="button" class="button-triangle" onclick="return calculateTriangleK()">hitung</button>
+                <!-- <button type="submit" class="button-triangle">Hitung</button> -->
+            </form>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Second Page -->
+    <section id="jajargenjang"> 
+        <div class="card">
+            <div>
+            <h2>Luas Jajargenjang</h2>
+           </div>
+         </div>
+        <img src="/assets/Parallelogram.jpeg" alt="">
+        <div>
+            <h6>Rumus Luas</h6>
+            <p>L = Alas x Tinggi</p>
+        </div>
+        <div>
+            <p>dimana</p>
+            <p id="nilai-alas-jajargenjang">Alas = ....</p>
+            <p id="nilai-tinggi-jajargenjang">Tinggi = ....</p>
+            <p id="nilai-luas-jajargenjang">Luas = ....</p>
+        </div>
+        <div class="form-hitung">
+            <h1>Hitung Luas Jajargenjang</h1>
+            <form action="" class="form-jajargenjang">
+                <input type="number" name="alas-jajargenjang" placeholder="alas">
+                <input type="number" name="tinggi-jajargenjang" placeholder="tinggi">
+                <button type="button" class="button-jajargenjang" onclick="return calculateJajargenjang()">Hitung</button>
+            </form>
+        </div>
+        </div>
+
+
+        <!-- Keliling Jajargenjang -->
+       <div class="card">
+            <div>
+            <h2>Keliling Jajargenjang</h2>
+           </div>
+         </div>
+        <img src="/assets/Parallelogram.jpeg" alt="">
+        <div>
+            <h6>Rumus Keliling</h6>
+            <p>K = 2 x (a+b)</p>
+        </div>
+        <div>
+            <p>dimana</p>
+            <p id="nilai-alas-jajargenjang-k">Alas = ....</p>
+            <p id="nilai-sisimiring-jajargenjang-k">Sisi miring = ....</p>
+            <p id="nilai-keliling-jajargenjang-k">Keliling = ....</p>
+        </div>
+        <div class="form-hitung">
+            <h1>Hitung Keliling jajargenjang</h1>
+            <form action="" class="form-jajargenjang">
+                <input type="number" name="nilai-alas-jajargenjang-k" placeholder="alas">
+                <input type="number" name="nilai-sisimiring-jajargenjang-k" placeholder="sisi miring">
+                <button type="button" class="button-jajargenjang" onclick="return calculateJajargenjangK()">Hitung</button>
+                <!-- <button type="submit" class="button-triangle">Hitung</button> -->
+            </form>
+        </div>
+        </div>
+        </section>
+</main>
+    
+    <footer>
+        <!-- Footer -->
+        Copyright 2024 Catranger at RevoU
+    </footer>
+    </section>
+</main>
+<script src="Script.js"></script>
+</body>
+</html>
